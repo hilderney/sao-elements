@@ -1,4 +1,7 @@
-@zero = 0;
+@font-face {
+  font-family: 'SAOUI-Regular';
+  src: url("fonts/SAOUI-Regular.otf") format("OpenType");
+}
 .primary {
   color: #AABBFF;
 }
@@ -71,9 +74,20 @@
 .bg-black {
   background-color: #000000;
 }
+input,
+textarea,
+keygen,
+select,
+button,
 .btn {
+  font: inherit;
+  outline: none;
+}
+button,
+.btn,
+input[type=text] {
   display: inline-block;
-  padding: 4px;
+  padding: 7px 14px;
   font-size: 18.2px;
   line-height: inherit;
   text-align: center;
@@ -89,43 +103,9 @@
   background-color: #E3E4E6;
   background-image: none;
   border: 1px solid transparent;
-  border-radius: 4px;
 }
-* {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  position: relative;
-  font-size: 18.2px;
-  line-height: 1.4;
-  font-family: 'PT Sans Narrow', sans-serif;
-  outline: none;
-}
-div {
-  display: block;
-}
-p {
-  padding: 4px;
-}
-h1 {
-  font-family: 'Teko', monospace;
-  font-size: 42px;
-}
-input,
-textarea,
-keygen,
-select,
-button,
-.btn {
-  font: inherit;
-  outline: none;
-}
-input:button {
-  text-transform: uppercase;
+input[type=button] {
+  text-transform: none;
 }
 input:focus,
 textarea:focus,
@@ -137,10 +117,33 @@ textarea:active,
 keygen:active,
 select:active,
 button:active {
-  font: inherit;
   outline: none;
   background-color: #FAAF0F;
   box-shadow: inset 0 0 10px 0px rgba(0, 0, 0, 0.1);
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  font-size: 21px;
+  line-height: 2.5;
+  font-family: 'SAOUI-Regular', 'PT Sans Narrow', sans-serif;
+  outline: none;
+}
+div {
+  display: block;
+}
+p {
+  padding: 7px;
+}
+h1 {
+  font-family: 'Teko', monospace;
+  font-size: 42px;
 }
 .container {
   min-width: 960px;
@@ -154,7 +157,7 @@ button:active {
   min-height: 1px;
   overflow: hidden;
   margin: 0 -15px;
-  padding: 4px 15px;
+  padding: 7px 15px;
 }
 .group {
   display: block;
@@ -168,68 +171,112 @@ button:active {
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 .col-1 {
-  width: 16.66%;
+  width: 16.66666667%;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 .col-2 {
-  width: 33.32%;
+  width: 33.33333333%;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 .col-3 {
-  width: 49.98%;
+  width: 50%;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 .col-4 {
-  width: 66.64%;
+  width: 66.66666667%;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 .col-5 {
-  width: 83.3%;
+  width: 83.33333333%;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 .col-6 {
-  width: 99.96%;
+  width: 100%;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 4px;
-  padding-left: 4px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+.col-1:last-child {
+  width: 16.66666667%;
 }
 .pull-right {
   float: right;
   text-align: right;
 }
-.col-1:last-child {
-  width: 16.66%;
+.message {
+  max-width: 100%;
+  background: -moz-linear-gradient(top, #cccccc 0%, #E3E4E6 25%, #ffffff 50%, #E3E4E6 80%, #cccccc 100%);
+  background: -webkit-linear-gradient(top, #cccccc 0%, #E3E4E6 25%, #ffffff 50%, #E3E4E6 80%, #cccccc 100%);
+  background: linear-gradient(to bottom, #cccccc 0%, #E3E4E6 25%, #ffffff 50%, #E3E4E6 80%, #cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@light-gray', endColorstr='@light-gray', GradientType=0);
+}
+.message span {
+  display: block;
+  font-size: 54px;
+  text-align: center;
+}
+.menu-group {
+  position: relative;
+  width: 100%;
+}
+ul {
+  position: relative;
+  width: 33.33333333%;
+}
+.sub-menu {
+  position: absolute;
+  width: 300%;
+  left: 100%;
+  top: 0;
+  display: none;
+}
+ul li {
+  display: block;
+  list-style: none;
+  background-color: aquamarine;
+  position: relative;
+  margin: 0 0 7px 0;
+  padding: 7px;
+}
+li:hover + .sub-menu {
+  display: block;
+}
+.sub-menu:hover {
+  display: block;
+}
+.active + .sub-menu {
+  display: block;
 }
 /*# sourceMappingURL=sao.css.map */

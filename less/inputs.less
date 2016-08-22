@@ -1,0 +1,35 @@
+input, textarea, keygen, select, button, .btn{
+    font: inherit;
+    outline: none;
+}
+
+button, .btn, input[type=text]{
+
+    display: inline-block;
+    padding: @pd @pd*2;
+    font-size: @font-size * 1.3;
+    line-height: inherit;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: @light-gray;
+    background-image: none;
+    border: 1px solid transparent;
+}
+
+input[type=button]{
+    text-transform: none;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus, button:focus, input:active, textarea:active, keygen:active, select:active, button:active{
+    outline: none;
+    background-color: @selected;
+    box-shadow: inset 0 0 10px 0px rgba(0,0,0,0.10);
+}
