@@ -87,7 +87,7 @@ button,
 .btn,
 input[type=text] {
   display: inline-block;
-  padding: 7px 14px;
+  padding: 4px 8px;
   font-size: 18.2px;
   line-height: inherit;
   text-align: center;
@@ -128,6 +128,9 @@ button:active {
   margin: 0;
   padding: 0;
 }
+html {
+  height: 100%;
+}
 body {
   position: relative;
   font-size: 21px;
@@ -139,7 +142,7 @@ div {
   display: block;
 }
 p {
-  padding: 7px;
+  padding: 4px;
 }
 h1 {
   font-family: 'Teko', monospace;
@@ -157,7 +160,7 @@ h1 {
   min-height: 1px;
   overflow: hidden;
   margin: 0 -15px;
-  padding: 7px 15px;
+  padding: 4px 15px;
 }
 .group {
   display: block;
@@ -171,65 +174,65 @@ h1 {
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .col-1 {
-  width: 16.66666667%;
+  width: 155px;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .col-2 {
-  width: 33.33333333%;
+  width: 310px;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .col-3 {
-  width: 50%;
+  width: 465px;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .col-4 {
-  width: 66.66666667%;
+  width: 620px;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .col-5 {
-  width: 83.33333333%;
+  width: 775px;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .col-6 {
-  width: 100%;
+  width: 930px;
   position: relative;
   float: left;
   display: block;
   min-height: 1px;
-  padding-right: 7px;
-  padding-left: 7px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .col-1:last-child {
-  width: 16.66666667%;
+  width: 155px;
 }
 .pull-right {
   float: right;
@@ -247,36 +250,110 @@ h1 {
   font-size: 54px;
   text-align: center;
 }
-.menu-group {
+.menu-wrapper {
+  background-color: red;
   position: relative;
   width: 100%;
+  height: 182px;
 }
-ul {
-  position: relative;
-  width: 33.33333333%;
-}
-.sub-menu {
+.menu-wrapper .nav {
   position: absolute;
-  width: 300%;
-  left: 100%;
+  left: 310px;
+}
+.menu-wrapper .nav.slide-out {
+  left: 155px;
+}
+.menu-wrapper .lv1 .nav {
+  left: 30px;
+}
+.nav {
+  background-color: blue;
+  width: 310px;
+  height: 182px;
+}
+.nav li {
+  background-color: yellow;
+  height: 58px;
+  margin: 0 0 4px 0;
+  padding: 2px 14px;
+  list-style: none;
+}
+.nav li:last-child {
+  margin: 0 0 0 0;
+}
+.dropdown .nav {
+  display: none;
+  height: auto;
+}
+.dropdown button.js-back {
+  width: 30px;
+  height: 182px;
+  margin: 0 0 0 0;
+}
+.sub-menu.lv1 {
+  position: absolute;
+  height: 182px;
+  margin: 0 0 0 0;
+  width: 310px;
+  left: 310px;
   top: 0;
+}
+.sub-menu.lv2 {
+  position: absolute;
+  height: 182px;
+  margin: 0 0 0 0;
+  width: 310px;
+  left: 280px;
+  top: 0;
+}
+.dropdown .sub-menu {
   display: none;
 }
-ul li {
-  display: block;
-  list-style: none;
-  background-color: aquamarine;
-  position: relative;
-  margin: 0 0 7px 0;
-  padding: 7px;
+.dropdown.is-open .dropdown .sub-menu {
+  display: none;
 }
-li:hover + .sub-menu {
+.dropdown.is-open .sub-menu {
   display: block;
 }
-.sub-menu:hover {
-  display: block;
+.dropdown.is-open .nav {
+  position: absolute;
+  display: inline-block;
+  height: 182px;
+  margin: 0 0 0 0;
+  width: 280px;
 }
-.active + .sub-menu {
-  display: block;
+.dropdown.is-open .nav.slide-out {
+  width: 590px;
+}
+.dropdown.is-open .dropdown.is-open .sub-menu {
+  position: absolute;
+  display: inline-block;
+  height: 182px;
+  margin: 0 0 0 0;
+  width: 280px;
+}
+.dropdown.is-open li.menu-return {
+  background-color: white;
+  display: inline-block;
+  width: 30px;
+  height: 182px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin-left: 0;
+}
+.dropdown.is-open .dropdown.is-open li.menu-return {
+  background-color: orange;
+  display: inline-block;
+  width: 30px;
+  height: 182px;
+  position: absolute;
+  left: 620px;
+  top: 0px;
+  margin-left: 0;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
 }
 /*# sourceMappingURL=sao.css.map */
