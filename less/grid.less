@@ -1,0 +1,30 @@
+/*   ---   GRID   ---   */
+
+@pd: 4px;
+@mg: 7px;
+@full-size: 930px; // 100% da area apresentada
+@full: 100%;
+@col: @full-size / 6;
+
+.col{ 
+	position: relative;
+	float: left; 
+	display: block; 
+	min-height: 1px;
+	padding-right: @pd;
+	padding-left: @pd;
+}
+.col-1{ width: @col*1; .col;}
+.col-2{ width: @col*2; .col;}
+.col-3{ width: @col*3; .col;}
+.col-4{ width: @col*4; .col;}
+.col-5{ width: @col*5; .col;}
+.col-6{ width: @col*6; .col;}
+.col-1:last-child{ }
+.offset-1{ margin-left: @col*1; }
+.offset-2{ margin-left: @col*2; }
+.offset-3{ margin-left: @col*3; }
+.offset-4{ margin-left: @col*4; }
+.offset-5{ margin-left: @col*5; }
+.offset-6{ margin-left: @col*6; }
+.offset-1:last-child{ }

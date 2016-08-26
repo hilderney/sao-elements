@@ -4,107 +4,121 @@
 @line-height: 2;
 @font1: 'SAOUI-Regular','PT Sans Narrow', sans-serif;
 @font-code: 'Teko', monospace;
-
-@pd: 4px;
-@mg: 7px;
-@full-size: 930px; // 100%
-@col: @full-size / 6;
 @zero: 0;
 
+@import 'less/normalize';
+@import 'less/grid';
 @import 'less/colors';
+@import 'less/type';
+@import 'less/mixins';
 @import 'less/inputs';
 @import 'less/menu';
 
-*{ 
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	margin:0;
-	padding: 0;
-}
-
-html{
-	height:100%;
-
+.teste{ // 
+	.bg-to-rgba(@black, 0.65);
 }
 
 body{
-	position: relative;
 	font-size: @font-size * 1.5;
 	line-height: @line-height *1.25;
 	font-family: @font1;
-	outline:none;
+	font-weight: 100;
 }
-div{ 
-	display: block;
+div{
+	line-height:@line-height;
 }
-
-p{ padding: @pd }
-
+label{
+	display: inline-block;
+    margin: 0 0 -11px 0;
+    color: @darkest;
+}
 h1{
 	font-family: @font-code;
 	font-size: @font-size * 3;
+	font-weight: 300;
 }
 
+h4{
+	font-weight: 300;
+    margin-bottom: -@mg;
+}
+p { 
+  padding: @pd 
+}
 .container{
 	min-width:960px; 
 	max-width: 960px; 
 	margin:0 auto;
 	padding: 15px;
 }
+
 .row{ 
 	width: inherit; 
 	display: block; 
 	min-height:1px;
 	overflow:hidden;
-	margin: 0 -15px;
-	padding: @pd 15px;
+	margin: 0 -@mg*2;
+	padding: @pd @mg*2;
 }
-
 .group{
 	display:block;
 	width:100%;
+}
+
+.btn {
+	padding: @pd;
+	font-size: 18.2px;
+	border: 1px solid transparent;
+  	border-radius: none;
 }
 
 .border{
 	border: 1px solid @gray;
 }
 
-.col{ 
-	position: relative;
-	float: left; 
-	display: block; 
-	min-height: 1px;
-	padding-right: @pd;
-	padding-left: @pd;
-}
-.col-1{ width: @col; .col;}
-.col-2{ width: @col*2; .col;}
-.col-3{ width: @col*3; .col;}
-.col-4{ width: @col*4; .col;}
-.col-5{ width: @col*5; .col;}
-.col-6{ width: @col*6; .col;}
-.col-1:last-child{ width: @col - ;}
 .pull-right{ float:right; text-align: right;}
 
-.message {
-	max-width: 100%;
-	background: -moz-linear-gradient(top, @soft-gray 0%, @light-gray 25%, @white 50%, @light-gray 80%, @soft-gray 100%);
-	background: -webkit-linear-gradient(top, @soft-gray 0%, @light-gray 25%, @white 50%, @light-gray 80%, @soft-gray 100%);
-	background: linear-gradient(to bottom, @soft-gray 0%, @light-gray 25%, @white 50%, @light-gray 80%, @soft-gray 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@light-gray', endColorstr='@light-gray', GradientType=0);
+.message{
+	box-shadow: @pd/4 @pd/4 @pd rgba(0,0,0,0.35), @pd/2 @pd/2 @mg*3 rgba(0,0,0,0.35);
+    margin: @mg*2 0;
 }
 
-.message span{
-	display: block;
-	font-size: 54px;
-	text-align: center;
+.message-header{
+	padding: @mg*2 @mg;
+	.bg-to-rgba(@white,0.85);
 }
+.message-content {
+	display: block;
+	padding: @mg*4 @mg;
+	background-image: svg-gradient(to bottom, @gradient-gray-list);
+}
+.message-footer{
+	padding: @mg*2 @mg;
+	.bg-to-rgba(@white,0.85);
+}
+
+.message-content p{
+	font-size: @font-size*2.5;
+}
+
+.message h2, .message p, .message span{	
+	display: block;
+	text-align: center;
+	padding: @pd @mg;
+	font-weight: 300;
+}
+
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+.menu-content .menu-wrapper{
+	display:none;
+}
+
+.menu-content.collapsed .menu-wrapper{
+	display: block
+}
 .menu-wrapper{
-  background-color: red;
   position:relative;
   width: 100%;
   height: 182px;
@@ -114,23 +128,46 @@ h1{
     position: absolute;
     left: 310px;
 }
-
-.menu-wrapper .nav.slide-out{
+.menu-wrapper.lv1-open .nav.slide-out{
     left: 155px;   
 }
 
+.menu-wrapper.lv2-open .nav.slide-out{
+    left: 0px;   
+}
+
+.menu-wrapper.lv2-open .nav.slide-out .nav.slide-out{
+    left: 30px;   
+}
+
+.menu-content.collapsed .icon{
+	display:block;
+	position: relative;
+    top: 115px;
+    left: 176px;
+    z-index: 100;
+}
+.menu-content.collapsed.lv1 .icon{
+	display:block;
+	position: relative;
+    top: 115px;
+    left: 0px;
+    z-index: 100;
+}
+.menu-content.collapsed.lv2 .icon{
+	display:none;
+}
 
 .menu-wrapper .lv1 .nav {
     left: 30px;
 }
 
 .nav{
-	background-color: blue;
   width: 310px;
   height: 182px;
 }
 .nav li{
-	background-color: yellow;
+	background-color: @light-gray;
   	height: 58px;
   	margin:0 0 @pd 0;
   	padding: @pd/2 @mg*2;

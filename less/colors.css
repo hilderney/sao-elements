@@ -1,3 +1,7 @@
+/*   ---   COLORS   ---   */
+/*   ---   BASIC COLORS   ---   */
+/*   ---   TRANSPARENCY COLORS (COLOR-TRANPARENCY)   ---   */
+/*   ---   BASIC CLASS COLORS   ---   */
 .primary {
   color: #AABBFF;
 }
@@ -34,40 +38,511 @@
 .black {
   color: #000000;
 }
+/*   ---   TRANSPARENCY CLASS COLORS   ---   */
+.primary-15 {
+  color: rgba(170, 187, 255, 0.15);
+}
+.confirm-15 {
+  color: rgba(66, 127, 180, 0.15);
+}
+.cancel-15 {
+  color: rgba(253, 51, 102, 0.15);
+}
+.alert-15 {
+  color: rgba(153, 34, 51, 0.15);
+}
+.selected-15 {
+  color: rgba(250, 175, 15, 0.15);
+}
+.light-gray-15 {
+  color: rgba(227, 228, 230, 0.15);
+}
+.gray-15 {
+  color: rgba(96, 96, 106, 0.15);
+}
+.soft-gray-15 {
+  color: rgba(204, 204, 204, 0.15);
+}
+.dark-gray-15 {
+  color: rgba(58, 60, 69, 0.15);
+}
+.off-light-15 {
+  color: rgba(237, 237, 241, 0.15);
+}
+.darkest-15 {
+  color: rgba(34, 34, 37, 0.15);
+}
+.white-15 {
+  color: rgba(255, 255, 255, 0.15);
+}
+.black-15 {
+  color: rgba(0, 0, 0, 0.15);
+}
+.primary-35 {
+  color: rgba(170, 187, 255, 0.35);
+}
+.confirm-35 {
+  color: rgba(66, 127, 180, 0.35);
+}
+.cancel-35 {
+  color: rgba(253, 51, 102, 0.35);
+}
+.alert-35 {
+  color: rgba(153, 34, 51, 0.35);
+}
+.selected-35 {
+  color: rgba(250, 175, 15, 0.35);
+}
+.light-gray-35 {
+  color: rgba(227, 228, 230, 0.35);
+}
+.gray-35 {
+  color: rgba(96, 96, 106, 0.35);
+}
+.soft-gray-35 {
+  color: rgba(204, 204, 204, 0.35);
+}
+.dark-gray-35 {
+  color: rgba(58, 60, 69, 0.35);
+}
+.off-light-35 {
+  color: rgba(237, 237, 241, 0.35);
+}
+.darkest-35 {
+  color: rgba(34, 34, 37, 0.35);
+}
+.white-35 {
+  color: rgba(255, 255, 255, 0.35);
+}
+.black-35 {
+  color: rgba(0, 0, 0, 0.35);
+}
+.primary-50 {
+  color: rgba(170, 187, 255, 0.5);
+}
+.confirm-50 {
+  color: rgba(66, 127, 180, 0.5);
+}
+.cancel-50 {
+  color: rgba(253, 51, 102, 0.5);
+}
+.alert-50 {
+  color: rgba(153, 34, 51, 0.5);
+}
+.selected-50 {
+  color: rgba(250, 175, 15, 0.5);
+}
+.light-gray-50 {
+  color: rgba(227, 228, 230, 0.5);
+}
+.gray-50 {
+  color: rgba(96, 96, 106, 0.5);
+}
+.soft-gray-50 {
+  color: rgba(204, 204, 204, 0.5);
+}
+.dark-gray-50 {
+  color: rgba(58, 60, 69, 0.5);
+}
+.off-light-50 {
+  color: rgba(237, 237, 241, 0.5);
+}
+.darkest-50 {
+  color: rgba(34, 34, 37, 0.5);
+}
+.white-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+.black-50 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.primary-65 {
+  color: rgba(170, 187, 255, 0.65);
+}
+.confirm-65 {
+  color: rgba(66, 127, 180, 0.65);
+}
+.cancel-65 {
+  color: rgba(253, 51, 102, 0.65);
+}
+.alert-65 {
+  color: rgba(153, 34, 51, 0.65);
+}
+.selected-65 {
+  color: rgba(250, 175, 15, 0.65);
+}
+.light-gray-65 {
+  color: rgba(227, 228, 230, 0.65);
+}
+.gray-65 {
+  color: rgba(96, 96, 106, 0.65);
+}
+.soft-gray-65 {
+  color: rgba(204, 204, 204, 0.65);
+}
+.dark-gray-65 {
+  color: rgba(58, 60, 69, 0.65);
+}
+.off-light-65 {
+  color: rgba(237, 237, 241, 0.65);
+}
+.darkest-65 {
+  color: rgba(34, 34, 37, 0.65);
+}
+.white-65 {
+  color: rgba(255, 255, 255, 0.65);
+}
+.black-65 {
+  color: rgba(0, 0, 0, 0.65);
+}
+.primary-85 {
+  color: rgba(170, 187, 255, 0.85);
+}
+.confirm-85 {
+  color: rgba(66, 127, 180, 0.85);
+}
+.cancel-85 {
+  color: rgba(253, 51, 102, 0.85);
+}
+.alert-85 {
+  color: rgba(153, 34, 51, 0.85);
+}
+.selected-85 {
+  color: rgba(250, 175, 15, 0.85);
+}
+.light-gray-85 {
+  color: rgba(227, 228, 230, 0.85);
+}
+.gray-85 {
+  color: rgba(96, 96, 106, 0.85);
+}
+.soft-gray-85 {
+  color: rgba(204, 204, 204, 0.85);
+}
+.dark-gray-85 {
+  color: rgba(58, 60, 69, 0.85);
+}
+.off-light-85 {
+  color: rgba(237, 237, 241, 0.85);
+}
+.darkest-85 {
+  color: rgba(34, 34, 37, 0.85);
+}
+.white-85 {
+  color: rgba(255, 255, 255, 0.85);
+}
+.black-85 {
+  color: rgba(0, 0, 0, 0.85);
+}
+/*   ---   BASIC BACKGROUND COLORS   ---   */
 .bg-primary {
   background-color: #AABBFF;
+  color: #222225;
 }
 .bg-confirm {
   background-color: #427FB4;
+  color: #ffffff;
 }
 .bg-cancel {
   background-color: #FD3366;
+  color: #ffffff;
 }
 .bg-alert {
   background-color: #992233;
+  color: #ffffff;
 }
 .bg-selected {
   background-color: #FAAF0F;
+  color: #ffffff;
 }
 .bg-light-gray {
   background-color: #E3E4E6;
+  color: #000000;
 }
 .bg-gray {
   background-color: #60606A;
+  color: #ffffff;
 }
 .bg-dark-gray {
   background-color: #3A3C45;
+  color: #ffffff;
 }
 .bg-off-light {
   background-color: #EDEDF1;
+  color: #222225;
 }
 .bg-darkest {
   background-color: #222225;
+  color: #ffffff;
 }
 .bg-white {
   background-color: #ffffff;
+  color: #222225;
 }
 .bg-black {
   background-color: #000000;
+  color: #EDEDF1;
 }
+/*   ---   TRANSPARENCY BACKGROUND COLORS   ---   */
+.bg-primary-15 {
+  background-color: rgba(170, 187, 255, 0.15);
+  color: #222225;
+}
+.bg-confirm-15 {
+  background-color: rgba(66, 127, 180, 0.15);
+  color: #ffffff;
+}
+.bg-cancel-15 {
+  background-color: rgba(253, 51, 102, 0.15);
+  color: #ffffff;
+}
+.bg-alert-15 {
+  background-color: rgba(153, 34, 51, 0.15);
+  color: #ffffff;
+}
+.bg-selected-15 {
+  background-color: rgba(250, 175, 15, 0.15);
+  color: #ffffff;
+}
+.bg-light-gray-15 {
+  background-color: rgba(227, 228, 230, 0.15);
+  color: #000000;
+}
+.bg-gray-15 {
+  background-color: rgba(96, 96, 106, 0.15);
+  color: #ffffff;
+}
+.bg-soft-gray-15 {
+  background-color: rgba(204, 204, 204, 0.15);
+  color: #ffffff;
+}
+.bg-dark-gray-15 {
+  background-color: rgba(58, 60, 69, 0.15);
+  color: #ffffff;
+}
+.bg-off-light-15 {
+  background-color: rgba(237, 237, 241, 0.15);
+  color: #222225;
+}
+.bg-darkest-15 {
+  background-color: rgba(34, 34, 37, 0.15);
+  color: #ffffff;
+}
+.bg-white-15 {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #222225;
+}
+.bg-black-15 {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #EDEDF1;
+}
+.bg-primary-35 {
+  background-color: rgba(170, 187, 255, 0.35);
+  color: #222225;
+}
+.bg-confirm-35 {
+  background-color: rgba(66, 127, 180, 0.35);
+  color: #ffffff;
+}
+.bg-cancel-35 {
+  background-color: rgba(253, 51, 102, 0.35);
+  color: #ffffff;
+}
+.bg-alert-35 {
+  background-color: rgba(153, 34, 51, 0.35);
+  color: #ffffff;
+}
+.bg-selected-35 {
+  background-color: rgba(250, 175, 15, 0.35);
+  color: #ffffff;
+}
+.bg-light-gray-35 {
+  background-color: rgba(227, 228, 230, 0.35);
+  color: #000000;
+}
+.bg-gray-35 {
+  background-color: rgba(96, 96, 106, 0.35);
+  color: #ffffff;
+}
+.bg-soft-gray-35 {
+  background-color: rgba(204, 204, 204, 0.35);
+  color: #ffffff;
+}
+.bg-dark-gray-35 {
+  background-color: rgba(58, 60, 69, 0.35);
+  color: #ffffff;
+}
+.bg-off-light-35 {
+  background-color: rgba(237, 237, 241, 0.35);
+  color: #222225;
+}
+.bg-darkest-35 {
+  background-color: rgba(34, 34, 37, 0.35);
+  color: #ffffff;
+}
+.bg-white-35 {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #222225;
+}
+.bg-black-35 {
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #EDEDF1;
+}
+.bg-primary-50 {
+  background-color: rgba(170, 187, 255, 0.5);
+  color: #222225;
+}
+.bg-confirm-50 {
+  background-color: rgba(66, 127, 180, 0.5);
+  color: #ffffff;
+}
+.bg-cancel-50 {
+  background-color: rgba(253, 51, 102, 0.5);
+  color: #ffffff;
+}
+.bg-alert-50 {
+  background-color: rgba(153, 34, 51, 0.5);
+  color: #ffffff;
+}
+.bg-selected-50 {
+  background-color: rgba(250, 175, 15, 0.5);
+  color: #ffffff;
+}
+.bg-light-gray-50 {
+  background-color: rgba(227, 228, 230, 0.5);
+  color: #000000;
+}
+.bg-gray-50 {
+  background-color: rgba(96, 96, 106, 0.5);
+  color: #ffffff;
+}
+.bg-soft-gray-50 {
+  background-color: rgba(204, 204, 204, 0.5);
+  color: #ffffff;
+}
+.bg-dark-gray-50 {
+  background-color: rgba(58, 60, 69, 0.5);
+  color: #ffffff;
+}
+.bg-off-light-50 {
+  background-color: rgba(237, 237, 241, 0.5);
+  color: #222225;
+}
+.bg-darkest-50 {
+  background-color: rgba(34, 34, 37, 0.5);
+  color: #ffffff;
+}
+.bg-white-50 {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #222225;
+}
+.bg-black-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #EDEDF1;
+}
+.bg-primary-65 {
+  background-color: rgba(170, 187, 255, 0.65);
+  color: #222225;
+}
+.bg-confirm-65 {
+  background-color: rgba(66, 127, 180, 0.65);
+  color: #ffffff;
+}
+.bg-cancel-65 {
+  background-color: rgba(253, 51, 102, 0.65);
+  color: #ffffff;
+}
+.bg-alert-65 {
+  background-color: rgba(153, 34, 51, 0.65);
+  color: #ffffff;
+}
+.bg-selected-65 {
+  background-color: rgba(250, 175, 15, 0.65);
+  color: #ffffff;
+}
+.bg-light-gray-65 {
+  background-color: rgba(227, 228, 230, 0.65);
+  color: #000000;
+}
+.bg-gray-65 {
+  background-color: rgba(96, 96, 106, 0.65);
+  color: #ffffff;
+}
+.bg-soft-gray-65 {
+  background-color: rgba(204, 204, 204, 0.65);
+  color: #ffffff;
+}
+.bg-dark-gray-65 {
+  background-color: rgba(58, 60, 69, 0.65);
+  color: #ffffff;
+}
+.bg-off-light-65 {
+  background-color: rgba(237, 237, 241, 0.65);
+  color: #222225;
+}
+.bg-darkest-65 {
+  background-color: rgba(34, 34, 37, 0.65);
+  color: #ffffff;
+}
+.bg-white-65 {
+  background-color: rgba(255, 255, 255, 0.65);
+  color: #222225;
+}
+.bg-black-65 {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #EDEDF1;
+}
+.bg-primary-85 {
+  background-color: rgba(170, 187, 255, 0.85);
+  color: #222225;
+}
+.bg-confirm-85 {
+  background-color: rgba(66, 127, 180, 0.85);
+  color: #ffffff;
+}
+.bg-cancel-85 {
+  background-color: rgba(253, 51, 102, 0.85);
+  color: #ffffff;
+}
+.bg-alert-85 {
+  background-color: rgba(153, 34, 51, 0.85);
+  color: #ffffff;
+}
+.bg-selected-85 {
+  background-color: rgba(250, 175, 15, 0.85);
+  color: #ffffff;
+}
+.bg-light-gray-85 {
+  background-color: rgba(227, 228, 230, 0.85);
+  color: #000000;
+}
+.bg-gray-85 {
+  background-color: rgba(96, 96, 106, 0.85);
+  color: #ffffff;
+}
+.bg-soft-gray-85 {
+  background-color: rgba(204, 204, 204, 0.85);
+  color: #ffffff;
+}
+.bg-dark-gray-85 {
+  background-color: rgba(58, 60, 69, 0.85);
+  color: #ffffff;
+}
+.bg-off-light-85 {
+  background-color: rgba(237, 237, 241, 0.85);
+  color: #222225;
+}
+.bg-darkest-85 {
+  background-color: rgba(34, 34, 37, 0.85);
+  color: #ffffff;
+}
+.bg-white-85 {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #222225;
+}
+.bg-black-85 {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #EDEDF1;
+}
+/*   ---   GRADIENT / COMPLEX SPECIFCS COLORS   ---   */
 /*# sourceMappingURL=colors.css.map */
