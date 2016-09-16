@@ -837,6 +837,9 @@ p {
   padding: 4px 7px;
   font-weight: 300;
 }
+.icon i {
+  font-size: 64px;
+}
 .menu-content .menu-wrapper {
   display: none;
 }
@@ -861,11 +864,18 @@ p {
 .menu-wrapper.lv2-open .nav.slide-out .nav.slide-out {
   left: 30px;
 }
+.menu-content .icon {
+  display: block;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+}
 .menu-content.collapsed .icon {
   display: block;
   position: relative;
   top: 115px;
   left: 176px;
+  width: 155px;
   z-index: 100;
 }
 .menu-content.collapsed.lv1 .icon {
@@ -969,5 +979,9 @@ p {
 .disabled {
   pointer-events: none;
   opacity: 0.4;
+}
+div.icon svg {
+  fill: #60606a;
+  width: 64px;
 }
 /*# sourceMappingURL=sao.css.map */

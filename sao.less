@@ -108,8 +108,12 @@ p {
 	font-weight: 300;
 }
 
+.icon i{
+    font-size: 64px;
+}
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//+++++++++++++++++++++++   MENU   ++++++++++++++++++++++++++++++++++++++++++++++
 
 .menu-content .menu-wrapper{
 	display:none;
@@ -140,11 +144,19 @@ p {
     left: 30px;   
 }
 
+.menu-content .icon{
+    display:block;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
 .menu-content.collapsed .icon{
 	display:block;
 	position: relative;
     top: 115px;
-    left: 176px;
+    left: 176px; //@col
+    width: @col;
     z-index: 100;
 }
 .menu-content.collapsed.lv1 .icon{
@@ -272,3 +284,7 @@ p {
 
 
 
+div.icon svg {
+    fill: #60606a;
+    width: 64px;
+}

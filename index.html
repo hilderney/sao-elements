@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SAO</title>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Teko:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="sao.css">
+	
+	<!--  
+	Utilizando o symboldefs.svg que fica muito melhor a qualidade do desenho
+	CSSS -> svg.icon{ color: red; font-size: 32px;}
+	<link rel="stylesheet" href="fonts/sao-glyph-32/style.css">
+	<link rel="stylesheet" href="fonts/sao-glyph-32/ie7/ie7.css"> 
+-->
+
 </head>
 <body class="bg-light-gray">
 	<div class="container bg-white">
@@ -75,21 +84,35 @@
 					<div class="message-content bg-white-65">
 						<div class="row">
 							<div class="col-6">
-							<p>Mensagem de Alerta.</p>
+								<p>Mensagem de Alerta.</p>
 							</div>
 						</div>
 					</div>
 					<div class="message-footer">
 						<div class="row">
-							<div class="col-1 offset-1 bg-gray"> <span class="icon">icon Confirm</span></div>
-							<div class="col-1 offset-2 bg-gray"> <span class="icon">icon Cancel</span></div>
+							<div class="col-1 offset-1">
+								<div class="icon">
+									<svg>
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="symbol-defs.svg#sao-ring-confirm-svg"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="col-1 offset-2"> 
+								<div class="icon">
+									<svg> 
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="symbol-defs.svg#sao-ring-cancel-svg"></use>
+									</svg>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div id="myMenu" class="menu-content">
-					<span class="icon">Icon To Menu Here</span>
+					<div class="icon">
+						<svg> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="symbol-defs.svg#sao-btn-avatar-svg"></use> </svg>
+					</div>
 					<div class="menu-wrapper">
 						<ul class="nav">
 							<li>M1 I1-l1

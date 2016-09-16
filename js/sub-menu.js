@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$menus = $('.menu-content');
-	$menu_btn = $menus.children('span.icon');
+	$menu_btn = $menus.children('div.icon');
 	$menu_btn.on("click", function(e) {
 		e.stopPropagation();
 		e.preventDefault();
