@@ -1,30 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SAO</title>
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Teko:300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="sao.css">
-	
-	<!--  
-	Utilizando o symboldefs.svg que fica muito melhor a qualidade do desenho
-	CSSS -> svg.icon{ color: red; font-size: 32px;}
-	<link rel="stylesheet" href="fonts/sao-glyph-32/style.css">
-	<link rel="stylesheet" href="fonts/sao-glyph-32/ie7/ie7.css"> 
--->
 
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset=UTF-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>SAO</title>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Teko:300' rel=stylesheet type='text/css'>
+	<link rel=stylesheet href=sao.css>
 </head>
-<body class="bg-light-gray">
+<body class=bg-light-gray>
 	<div class="container bg-white">
-		<div class="row">
-			<div class="group pull-right">
-				<input type="button" class="btn" value="input button">
-				<button class="btn"> Element Button </button>
-				<input type="text" class="form" value="" >
-			</div>
+
+
+
+		<div class="block">
 			<div class="row">
-				<h4>6 Column</h4>
+			<div class="title">
+				<h1>Inputs</h1>
+			</div>
+				<div class="group pull-right">
+					<input type="button" class="btn" value="input button">
+					<button class=btn> Element Button </button>
+					<input type="text" class="form" value="">
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="block">
+			<div class="row">
+			<div class="title">
+				<h1>Grid</h1>
+			</div>
+				<div class="title">
+					<h4>6 Column</h4>
+				</div>
 				<div class="col-1 bg-primary">col-1 </div>
 				<div class="col-1 bg-confirm">col-1</div>
 				<div class="col-1 bg-cancel">col-1</div>
@@ -33,22 +44,35 @@
 				<div class="col-1 bg-gray">col-1</div>
 			</div>
 			<div class="row">
-				<h4>3 Column</h4>
+				<div class="title">
+					<h4>3 Column</h4>
+				</div>
 				<div class="col-2 bg-primary">col-2 </div>
 				<div class="col-2 bg-confirm">col-2</div>
 				<div class="col-2 bg-cancel">col-2</div>
 			</div>
-			<div class="row">
-				<h4>2 Column</h4>
+			<div class="row">			
+				<div class="title">
+					<h4>2 Column</h4>
+				</div>
 				<div class="col-3 bg-primary">col-3 </div>
 				<div class="col-3 bg-confirm">col-3</div>
 			</div>
 			<div class="row">
-				<h4>1 Column</h4>
+				<div class="title">
+					<h4>1 Column</h4>
+				</div>
 				<div class="col-6 bg-cancel">col-6</div>
 			</div>
-			<div class="row">
-				<h4>Offset</h4>
+		</div>
+
+
+
+		<div class="block">
+			<div class='row'>
+				<div class="title">
+					<h4>Offset</h4>
+				</div>
 				<div class="row">
 					<div class="col-2 bg-primary">col-2 </div>
 					<div class="col-2 offset-2 bg-confirm">col-2 offset-2</div>
@@ -61,8 +85,42 @@
 					<div class="col-2 offset-1 bg-selected">col-2 offset-1</div>
 				</div>
 			</div>
+		</div>
+		
+
+
+		<div class="block">
 			<div class="row">
-				<h1 class="">Title</h1>
+				<div class="title">
+					<h1 class="">Titles</h1>
+				</div>
+				<div class="text-center">
+					<h1>Title 1</h1>
+					<h2>Title 2</h2>
+					<h3>Title 3</h3>
+					<h4>Title 4</h4>
+					<h5>Title 5</h5>
+				</div>
+				
+				<div class="title">
+					<h1 class="">Text Elements</h1>
+				</div>
+				<div class="text-center">
+					<span>Span</span> <br/>
+					<em>Emphasis</em> <br/>
+					<i>Italic</i>
+				</div>
+				<p>Paragraph</p>
+			</div>
+		</div>
+
+
+		
+		<div class="block">
+			<div class="row">
+			<div class="title">
+				<h1>Colors</h1>
+			</div>
 				<p class="col-1 bg-primary"> Fundo primary</p>
 				<p class="col-1 bg-confirm"> Fundo confirm</p>
 				<p class="col-1 bg-cancel"> Fundo cancel</p>
@@ -76,7 +134,15 @@
 				<p class="col-1 bg-white"> Fundo white</p>
 				<p class="col-1 bg-black"> Fundo black</p>
 			</div>
+		</div>
+
+
+
+		<div class="block">
 			<div class="row">
+			<div class="title">
+				<h1>Confirm / Cancel Message</h1>
+			</div>
 				<div class="message">
 					<div class="message-header">
 						<h2 class="message-title">Título da Mensagem</h2>
@@ -91,15 +157,15 @@
 					<div class="message-footer">
 						<div class="row">
 							<div class="col-1 offset-1">
-								<div class="icon">
+								<div class="icon btn-confirm">
 									<svg>
 										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="symbol-defs.svg#sao-ring-confirm-svg"></use>
 									</svg>
 								</div>
 							</div>
-							<div class="col-1 offset-2"> 
-								<div class="icon">
-									<svg> 
+							<div class="col-1 offset-2">
+								<div class="icon btn-cancel">
+									<svg>
 										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="symbol-defs.svg#sao-ring-cancel-svg"></use>
 									</svg>
 								</div>
@@ -108,8 +174,15 @@
 					</div>
 				</div>
 			</div>
+		</div>
+
+
+		<div class="block">
 			<div class="row">
-				<div id="myMenu" class="menu-content">
+			<div class="title">
+				<h1>Menu</h1>
+			</div>
+				<div id=myMenu class="menu-content">
 					<div class="icon">
 						<svg> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="symbol-defs.svg#sao-btn-avatar-svg"></use> </svg>
 					</div>
@@ -137,7 +210,7 @@
 												<button class="js-back"> < </button>
 												<ul class="nav">
 													<li>M1 SM3 I1-l3</li>
-													<li>M1 SM3 I2-l3</li>				
+													<li>M1 SM3 I2-l3</li>
 													<li>M1 SM3 I3-l3</li>
 													<li>M1 SM3 I4-l3</li>
 													<li>M1 SM3 I5-l3</li>
@@ -145,7 +218,7 @@
 											</div>
 										</li>
 										<li>M0 I4-l2</li>
-										<li>M0 I5-l2</li>				
+										<li>M0 I5-l2</li>
 									</ul>
 								</div>
 							</li>
@@ -159,7 +232,7 @@
 												<button class="js-back"> < </button>
 												<ul class="nav">
 													<li>M1 SM1 I3-l3</li>
-													<li>M1 SM1 I3-l3</li>				
+													<li>M1 SM1 I3-l3</li>
 													<li>M1 SM1 I3-l3</li>
 													<li>M1 SM1 I3-l3</li>
 													<li>M1 SM1 I3-l3</li>
@@ -169,19 +242,20 @@
 										<li>M0 I3-l2</li>
 										<li>M0 I3-l2</li>
 										<li>M0 I3-l2</li>
-										<li>M0 I3-l2</li>				
+										<li>M0 I3-l2</li>
 									</ul>
 								</div>
 							</li>
 							<li>M1 I4-l1</li>
 							<li>M1 I5-l1</li>
-						</ul>	
+						</ul>
 					</div>
-				</div> <!-- END OF MENU-CONTENT -->
+				</div>
 			</div>
-			<div class="row teste"> Teste realizado aqui</div>
 		</div>
-		<script src="js/jquery-3.1.0.min.js"></script>
-		<script src="js/sub-menu.js"></script>
-	</body>
-	</html>
+		<div class="row teste"> Teste realizado aqui</div>
+	</div>
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/sub-menu.js"></script>
+</body>
+</html>

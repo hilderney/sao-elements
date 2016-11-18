@@ -22,6 +22,7 @@ button, .btn, input[type=text]{
     background-color: @light-gray;
     background-image: none;
     border: 1px solid transparent;
+    min-width: @col;
 }
 
 input[type=button]{
@@ -32,4 +33,9 @@ input:focus, textarea:focus, keygen:focus, select:focus, button:focus, input:act
     outline: none;
     background-color: @selected;
     box-shadow: inset 0 0 10px 0px rgba(0,0,0,0.10);
+}
+
+input[type=text]{
+    padding: @pd @mg;
+    text-align: left;
 }

@@ -731,6 +731,7 @@ input[type=text] {
   background-color: #E3E4E6;
   background-image: none;
   border: 1px solid transparent;
+  min-width: 155px;
 }
 input[type=button] {
   text-transform: none;
@@ -748,6 +749,10 @@ button:active {
   outline: none;
   background-color: #FAAF0F;
   box-shadow: inset 0 0 10px 0px rgba(0, 0, 0, 0.1);
+}
+input[type=text] {
+  padding: 4px 7px;
+  text-align: left;
 }
 .teste {
   background-color: rgba(0, 0, 0, 0.65);
@@ -769,11 +774,38 @@ label {
 h1 {
   font-family: 'Teko', monospace;
   font-size: 42px;
+  margin-bottom: -7px;
   font-weight: 300;
 }
-h4 {
+h2 {
+  font-family: 'SAOUI-Regular', 'PT Sans Narrow', sans-serif;
+  font-size: 28px;
+  margin-bottom: -7px;
+  font-weight: 300;
+}
+h3 {
+  font-family: 'Teko', monospace;
+  font-size: 28px;
   font-weight: 300;
   margin-bottom: -7px;
+}
+h4 {
+  font-family: 'SAOUI-Regular', 'PT Sans Narrow', sans-serif;
+  font-size: 17.5px;
+  margin-bottom: -7px;
+  font-weight: 300;
+}
+h5 {
+  font-family: 'Teko', monospace;
+  font-size: 140px;
+  font-weight: 300;
+}
+span {
+  opacity: 0.75;
+}
+em {
+  opacity: 0.75;
+  font-weight: 100;
 }
 p {
   padding: 4px;
@@ -983,5 +1015,15 @@ p {
 div.icon svg {
   fill: #60606a;
   width: 64px;
+}
+div.btn-confirm svg {
+  fill: #427FB4;
+}
+div.btn-cancel svg {
+  fill: #FD3366;
+}
+.text-center {
+  text-align: center;
+  background-color: #E3E4E6;
 }
 /*# sourceMappingURL=sao.css.map */
